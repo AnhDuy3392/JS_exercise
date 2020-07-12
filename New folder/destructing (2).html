@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>delete variable</title>
+</head>
+<body>
+	<script>
+		let data = {
+			title: 'window',
+			size: [300, 400]
+		};
+		
+		let {
+			title,
+			size,
+			size: [width, height]
+		} = data;
+		
+		console.log(title);
+		console.log(size);
+		console.log(width);
+		console.log(height);
+	</script>
+</body>
+</html>

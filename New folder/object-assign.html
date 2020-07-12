@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+</head>
+<body>
+	<script>
+		const obj = {
+			name: 'Duy Anh',
+			age: 28,
+			array: [1,2,[3,4]],
+			object: {first:3, second:4, third:5, bonus: {forth: 6, fifth: 7}},
+			children: null,
+			dateField: new Date('1995-12-17T03:24:00'),
+			variable: undefined,
+			func: function(){}
+		};			
+		const obj2 = Object.assign({}, obj);
+		
+		obj2.name = 'AAA',
+		obj2.age = 33,
+		//obj2.array = [9,8,7],
+		obj2.array[2] = [66,77],
+		//obj2.object = {first:33, second:44, third:55, bonus: {forth: 67, fifth: 77}}
+		obj2.object.bonus = {forth: 66, fifth: 77},
+		obj2.children = 2,
+		obj2.dateField = new Date('1992-03-03T03:24:00'),
+		obj2.func = function(){return false; },
+		
+		console.log(obj);
+		console.log(obj2);
+	</script>
+</body>
+</html>

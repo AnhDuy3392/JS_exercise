@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+</head>
+<body>
+	<script>
+		const obj = {
+			name: 'Duy Anh'
+		};
+		
+		Object.preventExtensions(obj);
+		obj.__proto__.sayHi = function() {
+			console.log('Hello');
+		}		
+		
+		console.log(obj);
+	</script>
+</body>
+</html>

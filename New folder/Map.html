@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+</head>
+<body>
+	<script>
+		const obj = {key: 'Name'};
+		const obj2 = {value: 'DuyAnh'};
+		const obj3 = {value: 'DuyAnh'};
+		const arr = [1,2,3,4];
+		const func = ()=>{};
+		
+		// create new map object:
+		const newMap = new Map();
+		
+		// Add new property to map object:
+			// First way:
+			newMap
+			.set('age', 38)
+			.set(obj2, 'DuyAnh')
+			.set(obj3, 'DuyAnh2');
+		
+			// Second way:
+			const newMap2 = new Map([
+				['age', 30],
+				[{key: 'isSingle'}, {value: 'Yes'}],
+				['an array', arr],
+				['a function', func],
+				['Not a number', NaN]
+			]);
+		
+		// Show map property:
+		console.log(newMap);
+		console.log(newMap2);
+
+		// Overwrite property:
+		newMap.set(obj3, 'Duy Anh3');
+		console.log(newMap);		
+	</script>
+</body>
+</html>

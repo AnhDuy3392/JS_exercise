@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+</head>
+<body>
+	<script>
+		function test(a,b,c) {
+			console.log(arguments[1]);
+			arguments[1] = 100;
+			console.log(arguments[1]);
+			console.log(b);
+		}
+		
+		test(2,4,6);
+	</script>
+</body>
+</html>

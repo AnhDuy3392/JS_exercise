@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+</head>
+<body>
+	<script>
+		function Foo() {
+			this.name = 'Duy Anh';
+		}
+		Foo.prototype.name = 'Javascript';
+		
+		const foo = new Foo();
+		console.log(foo.name);
+		
+		delete foo.name;
+		console.log(foo.name);
+	</script>
+</body>
+</html>

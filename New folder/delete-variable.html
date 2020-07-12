@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>delete variable</title>
+</head>
+<body>
+	<script>
+		(function test(x,y,z) {
+			delete x;
+			delete y;
+			delete z;
+			
+			console.log(x+y+z)
+		})(1,[2,3],{x:4});
+	</script>
+</body>
+</html>
