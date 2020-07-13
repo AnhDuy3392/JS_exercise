@@ -18,9 +18,11 @@
 		};
 				
 		const obj2 = JSON.parse(JSON.stringify(obj));
-		console.log(obj2);
+		console.log(typeof obj2.array);
+		console.log(typeof obj2.object);
+		console.log(typeof obj2.func);
 		
-		/*console.log(
+		console.log(
 		  obj.name === obj2.name,
 		  obj.age === obj2.age,
 		  obj.array === obj2.array,
@@ -31,7 +33,7 @@
 		  obj.dateField === obj2.dateField,
 		  obj.variable === obj2.variable,
 		  obj.func === obj2.func,
-		);*/
+		);
 	</script>
 </body>
 </html>

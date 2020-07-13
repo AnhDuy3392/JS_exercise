@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+</head>
+<body>
+	<script>
+		bar();
+	
+		var bar;
+	
+		function bar() {
+			console.log('first');
+		}
+		
+		bar = function() {
+			console.log('Second');
+		}
+		
+		bar();
+		
+		foo();
+		
+		function foo() {
+			console.log(1);
+		}
+		
+		var foo = function() {
+			console.log('foo expression function');		
+		}
+		
+		function foo () {
+			console.log(2);
+		}
+		
+		foo();
+		
+	</script>
+</body>
+</html>
